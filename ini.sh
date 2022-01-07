@@ -12,9 +12,9 @@ sudo apt -y install jq
 echo "Instalando Go"
 
 wget https://go.dev/dl/go1.17.6.linux-amd64.tar.gz
-tar -xvf go1.17.6.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz
 rm -rf go1.17.6.linux-amd64.tar.gz
-cd go && cd bin
+cd usr/local/go/bin
 cp go /usr/local/bin
 echo ' ' >> $HOME/.bashrc
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
