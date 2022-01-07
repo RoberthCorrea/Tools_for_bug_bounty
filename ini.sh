@@ -2,24 +2,23 @@
 
 echo "Instalando Python3"
 
-sudo apt-get update
-sudo apt-get -y install python3-pip
+sudo apt update
+sudo apt -y install python3 python3-pip
 
 echo "Instalando JQ"
 
-sudo apt-get -y install jq
+sudo apt -y install jq
 
 echo "Instalando Go"
 
-wget -c https://go.dev/dl/go1.17.6.linux-amd64.tar.gz
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz
-rm -rf go1.17.6.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.17.6.linux-amd64.tar.gz
+tar -xvf go1.17.6.linux-amd64.tar.gz
+cd go && cd bin
+cp go /usr/local/bin
+echo ' ' >> $HOME/.bashrc
+echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
+echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
 
-if [ -f "$HOME/.zshrc" ]; then
-  echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
-else
-  echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.bashrc
-fi
 
 echo "Instalando Anew"
 
