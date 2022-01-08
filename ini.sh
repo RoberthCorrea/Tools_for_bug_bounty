@@ -22,6 +22,7 @@ cp go /usr/local/bin
 echo ' ' >> $HOME/.bashrc
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
+echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
 
 
 echo "Instalando Anew"
@@ -83,9 +84,13 @@ ln -s $HOME/go/bin/gau /usr/bin/gau
 
 echo "Instalando Subfinder"
 
-echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
-/usr/local/go/bin/go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-ln -s $HOME/go/bin/subfinder /usr/bin/subfinder
+apt install unzip
+cd ~/ferramentas_de_bug_bounty
+wget https://github.com/projectdiscovery/subfinder/releases/download/v2.4.9/subfinder_2.4.9_linux_amd64.zip
+unzip subfinder_2.4.9_linux_amd64.zip
+cp subfinder /usr/local/bin/
+chmod +x /usr/local/bin/subfinder
+
 
 echo "Instalando GF"
 
