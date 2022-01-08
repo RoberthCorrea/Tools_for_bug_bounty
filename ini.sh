@@ -30,13 +30,6 @@ echo "Instalando Anew"
 ln -s $HOME/go/bin/anew /usr/bin/anew
 
 
-echo "Instalando Subfinder"
-
-echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
-bash
-go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-
-
 echo "Instalando Assetfinder"
 
 /usr/local/go/bin/go install -v github.com/tomnomnom/assetfinder@latest
@@ -53,36 +46,47 @@ chmod +x /usr/local/bin/findomain
 
 echo "Instalando DNSX"
 
-go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+/usr/local/go/bin/go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+ln -s $HOME/go/bin/dnsx /usr/bin/dnsx
 
 
 echo "Instalando Naabu"
 
 sudo apt install -y libpcap-dev
-go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+/usr/local/go/bin/go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+ln -s $HOME/go/bin/naabu /usr/bin/naabu
 
 
 echo "Instalando HTTPX"
 
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+/usr/local/go/bin/go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+ln -s $HOME/go/bin/httpx /usr/bin/httpx
 
 
 echo "Instalando Nuclei"
 
-
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+/usr/local/go/bin/go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+ln -s $HOME/go/bin/nuclei /usr/bin/nuclei
 
 
 echo "Instalando Qsreplace"
 
+/usr/local/go/bin/go install -v github.com/tomnomnom/qsreplace@latest
+ln -s $HOME/go/bin/qsreplace /usr/bin/qsreplace
 
-go install -v github.com/tomnomnom/qsreplace@latest
 
 echo "Instalando Gau"
 
+/usr/local/go/bin/go install -v github.com/lc/gau/v2/cmd/gau@latest
+ln -s $HOME/go/bin/gau /usr/bin/gau
 
-go install -v github.com/lc/gau/v2/cmd/gau@latest
 
+echo "Instalando Subfinder"
+
+echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
+bash
+/usr/local/go/bin/go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+ln -s $HOME/go/bin/subfinder /usr/bin/subfinder
 
 echo "Instalando GF"
 
