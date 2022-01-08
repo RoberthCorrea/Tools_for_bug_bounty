@@ -32,7 +32,7 @@ ln -s $HOME/go/bin/anew /usr/bin/anew
 
 echo "Instalando Subfinder"
 
-acho 'export GOROOT=$HOME/go' >> $HOME/.bashrc
+echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
 bash
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 
