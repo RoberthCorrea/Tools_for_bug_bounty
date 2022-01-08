@@ -34,17 +34,17 @@ echo "Instalando Subfinder"
 
 echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
 bash
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 
 
 echo "Instalando Assetfinder"
 
-/usr/local/go/bin/go install github.com/tomnomnom/assetfinder@latest
+/usr/local/go/bin/go install -v github.com/tomnomnom/assetfinder@latest
 ln -s $HOME/go/bin/assetfinder /usr/bin/assetfinder
 
 
 echo "Instalando Findomain"
-
+cd ~/ferramentas_de_bug_bounty
 wget https://github.com/Findomain/Findomain/releases/download/5.1.1/findomain-linux
 mv findomain-linux findomain
 cp findomain /usr/local/bin/
