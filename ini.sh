@@ -84,7 +84,6 @@ ln -s $HOME/go/bin/gau /usr/bin/gau
 echo "Instalando Subfinder"
 
 echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
-bash
 /usr/local/go/bin/go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 ln -s $HOME/go/bin/subfinder /usr/bin/subfinder
 
@@ -92,3 +91,5 @@ echo "Instalando GF"
 
 /usr/local/go/bin/go install github.com/tomnomnom/gf@latest
 ln -s $HOME/go/bin/gf /usr/bin/gf
+
+bash
