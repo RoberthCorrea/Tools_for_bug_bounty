@@ -1,13 +1,16 @@
 #!/bin/bash
 
+
 echo "Instalando Python3"
 
 sudo apt update
 sudo apt -y install python3 python3-pip
 
+
 echo "Instalando JQ"
 
 sudo apt -y install jq
+
 
 echo "Instalando Go"
 
@@ -26,16 +29,19 @@ echo "Instalando Anew"
 /usr/local/go/bin/go install github.com/tomnomnom/anew@latest
 ln -s $HOME/go/bin/anew /usr/bin/anew
 
+
 echo "Instalando Subfinder"
 
 acho 'export GOROOT=$HOME/go' >> $HOME/.bashrc
 bash
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 
+
 echo "Instalando Assetfinder"
 
 /usr/local/go/bin/go install github.com/tomnomnom/assetfinder@latest
 ln -s $HOME/go/bin/assetfinder /usr/bin/assetfinder
+
 
 echo "Instalando Findomain"
 
@@ -44,30 +50,39 @@ mv findomain-linux findomain
 cp findomain /usr/local/bin/
 chmod +x /usr/local/bin/findomain
 
+
 echo "Instalando DNSX"
 
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+
 
 echo "Instalando Naabu"
 
 sudo apt install -y libpcap-dev
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 
+
 echo "Instalando HTTPX"
 
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 
+
 echo "Instalando Nuclei"
+
 
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
+
 echo "Instalando Qsreplace"
+
 
 go install -v github.com/tomnomnom/qsreplace@latest
 
 echo "Instalando Gau"
 
+
 go install -v github.com/lc/gau/v2/cmd/gau@latest
+
 
 echo "Instalando GF"
 
