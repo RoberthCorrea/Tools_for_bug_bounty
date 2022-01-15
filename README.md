@@ -1,5 +1,13 @@
 # Ferramentas_de_Bug_Bounty
 
+
+## Ferramentas para bug bounty
+Este projeto é voltado para a instalação de algumas ferramnetas para bug bounty ultilizadas por e que podem ajudar vocês.
+
+## Requisitos:
+- wget
+- GNU/Linux
+
 ## How to run
 
 ```
