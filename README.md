@@ -2,7 +2,7 @@
 
 
 ## Ferramentas para bug bounty
-Este projeto é voltado para a instalação de algumas ferramnetas para bug bounty ultilizadas por mim e que podem ajudar vocês.
+Este projeto é voltado para a instalação de algumas ferramentas para bug bounty ultilizadas por mim e que podem ajudar vocês.
 
 ## Requisitos:
 - wget
