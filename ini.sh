@@ -92,6 +92,14 @@ cp subfinder /usr/local/bin/
 chmod +x /usr/local/bin/subfinder
 
 
+echo "Instalando git-dumpler"
+
+cd ~/ferramentas_de_bug_bounty
+git clone https://github.com/arthaud/git-dumper.git
+cd ~/ferramentas_de_bug_bounty/git-dumper
+pip install -r requirements.txt
+
+
 echo "Instalando GF"
 
 /usr/local/go/bin/go install github.com/tomnomnom/gf@latest
