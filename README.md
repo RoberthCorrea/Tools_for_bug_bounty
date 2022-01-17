@@ -17,6 +17,7 @@ Qsreplace <br />
 Subfinder <br />
 ## Requisitos:
 - wget
+- git(git clone)
 - GNU/Linux
 
 ## How to run
