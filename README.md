@@ -4,17 +4,18 @@
 ## Ferramentas para bug bounty
 Este projeto é voltado para a instalação de algumas ferramentas para bug bounty utilizadas por mim e que podem ajudar vocês.
 ### Ferramentas utilizadas:
-Anew <br />
-Assetfinder <br />
-DNSX <br />
-Findomain <br />
-Gau <br />
-git-dumpler <br />
-HTTPX <br />
-Naabu <br />
-Nuclei <br />
-Qsreplace <br />
-Subfinder <br />
+- Anew <br />
+- Assetfinder <br />
+- DNSX <br />
+- Findomain <br />
+- Gau <br />
+- git-dumpler <br />
+- HTTPX <br />
+- Naabu <br />
+- Nuclei <br />
+- Qsreplace <br />
+- Subfinder <br />
+- Takeover <br />
 ## Requisitos:
 - wget
 - git
