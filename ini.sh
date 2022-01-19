@@ -11,6 +11,10 @@ echo "Instalando JQ"
 
 sudo apt -y install jq
 
+echo "Instalando Takeover"
+
+wget -q https://raw.githubusercontent.com/m4ll0k/takeover/master/takeover.py
+
 
 echo "Instalando Go"
 
