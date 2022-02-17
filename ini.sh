@@ -107,11 +107,12 @@ git clone https://github.com/arthaud/git-dumper.git
 cd ~/ferramentas_de_bug_bounty/git-dumper
 pip install -r requirements.txt
 
-/*
-echo "Instalando GF"
+echo "Instalando ParamSpider"
 
-/usr/local/go/bin/go install github.com/tomnomnom/gf@latest
-ln -s $HOME/go/bin/gf /usr/bin/gf
-*/
+cd ~/ferramentas_de_bug_bounty
+git clone https://github.com/devanshbatham/ParamSpider
+cd ~/ferramentas_de_bug_bounty/ParamSpider
+pip3 install -r requirements.txt
+cd ~/ferramentas_de_bug_bounty
 
 bash
