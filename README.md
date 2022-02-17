@@ -17,6 +17,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Subfinder <br />
 - Takeover <br />
 - Kxss <br />
+- ParamSpider <br />
 ## Requisitos:
 - wget
 - git
