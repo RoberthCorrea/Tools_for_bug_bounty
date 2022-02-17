@@ -54,6 +54,10 @@ echo "Instalando DNSX"
 /usr/local/go/bin/go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 ln -s $HOME/go/bin/dnsx /usr/bin/dnsx
 
+echo "Instalando Kxss"
+
+/usr/local/go/bin/go install -v github.com/Emoe/kxss@latest
+ln -s $HOME/go/bin/kxss /usr/bin/kxss
 
 echo "Instalando Naabu"
 
