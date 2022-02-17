@@ -16,6 +16,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Qsreplace <br />
 - Subfinder <br />
 - Takeover <br />
+- Kxss <br />
 ## Requisitos:
 - wget
 - git
