@@ -35,6 +35,11 @@ echo "Instalando Anew"
 ln -s $HOME/go/bin/anew /usr/bin/anew
 
 
+echo "Instalando Waybackurls"
+
+/usr/local/go/bin/go install -v github.com/tomnomnom/waybackurls@latest
+ln -s $HOME/go/bin/waybackurls /usr/bin/waybackurls
+
 echo "Instalando Assetfinder"
 
 /usr/local/go/bin/go install -v github.com/tomnomnom/assetfinder@latest
