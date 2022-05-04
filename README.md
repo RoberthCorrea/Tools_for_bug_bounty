@@ -18,6 +18,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Takeover <br />
 - Kxss <br />
 - ParamSpider <br />
+- Waybackurls <br />
 ## Requisitos:
 - wget
 - git
