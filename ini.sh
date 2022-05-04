@@ -40,6 +40,17 @@ echo "Instalando Waybackurls"
 /usr/local/go/bin/go install -v github.com/tomnomnom/waybackurls@latest
 ln -s $HOME/go/bin/waybackurls /usr/bin/waybackurls
 
+echo "Instalando Bhedak"
+
+pip3 install bhedak
+wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -q && chmod +x bhedak && mv bhedak /usr/bin/
+
+echo "Instalando Airixss"
+
+go install github.com/chromedp/chromedp@latest
+/usr/local/go/bin/go install github.com/ferreiraklet/airixss@latest
+ln -s $HOME/go/bin/airixss /usr/bin/airixss
+
 echo "Instalando Assetfinder"
 
 /usr/local/go/bin/go install -v github.com/tomnomnom/assetfinder@latest
@@ -120,5 +131,17 @@ git clone https://github.com/devanshbatham/ParamSpider
 cd ~/ferramentas_de_bug_bounty/ParamSpider
 pip3 install -r requirements.txt
 cd ~/ferramentas_de_bug_bounty
+
+echo "Instalando gf"
+
+/usr/local/go/bin/go install -v github.com/tomnomnom/gf@latest
+ln -s $HOME/go/bin/gf /usr/bin/gf
+echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+mkdir ~/.gf
+cd ~/
+git clone https://github.com/1ndianl33t/Gf-Patterns
+mv ~/Gf-Patterns/*.json ~/.gf
+
+
 
 bash
