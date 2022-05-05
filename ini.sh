@@ -26,7 +26,6 @@ cp go /usr/local/bin
 echo ' ' >> $HOME/.bashrc
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
-echo 'export GOROOT=$HOME/go' >> $HOME/.bashrc
 
 
 echo "Instalando Anew"
@@ -37,7 +36,7 @@ ln -s $HOME/go/bin/anew /usr/bin/anew
 
 echo "Instalando Waybackurls"
 
-/usr/local/go/bin/go install -v github.com/tomnomnom/waybackurls@latest
+/usr/local/go/bin/go install github.com/tomnomnom/waybackurls@latest
 ln -s $HOME/go/bin/waybackurls /usr/bin/waybackurls
 
 echo "Instalando Bhedak"
@@ -53,7 +52,7 @@ ln -s $HOME/go/bin/airixss /usr/bin/airixss
 
 echo "Instalando Assetfinder"
 
-/usr/local/go/bin/go install -v github.com/tomnomnom/assetfinder@latest
+/usr/local/go/bin/go install github.com/tomnomnom/assetfinder@latest
 ln -s $HOME/go/bin/assetfinder /usr/bin/assetfinder
 
 
@@ -67,43 +66,43 @@ chmod +x /usr/local/bin/findomain
 
 echo "Instalando DNSX"
 
-/usr/local/go/bin/go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+/usr/local/go/bin/go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 ln -s $HOME/go/bin/dnsx /usr/bin/dnsx
 
 echo "Instalando Kxss"
 
-/usr/local/go/bin/go install -v github.com/Emoe/kxss@latest
+/usr/local/go/bin/go install github.com/Emoe/kxss@latest
 ln -s $HOME/go/bin/kxss /usr/bin/kxss
 
 echo "Instalando Naabu"
 
 sudo apt install -y libpcap-dev
-/usr/local/go/bin/go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+/usr/local/go/bin/go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 ln -s $HOME/go/bin/naabu /usr/bin/naabu
 
 
 echo "Instalando HTTPX"
 
-/usr/local/go/bin/go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+/usr/local/go/bin/go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 ln -s $HOME/go/bin/httpx /usr/bin/httpx
 
 
 echo "Instalando Nuclei"
 
-/usr/local/go/bin/go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+/usr/local/go/bin/go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 ln -s $HOME/go/bin/nuclei /usr/bin/nuclei
 nuclei -update-templates
 
 
 echo "Instalando Qsreplace"
 
-/usr/local/go/bin/go install -v github.com/tomnomnom/qsreplace@latest
+/usr/local/go/bin/go install github.com/tomnomnom/qsreplace@latest
 ln -s $HOME/go/bin/qsreplace /usr/bin/qsreplace
 
 
 echo "Instalando Gau"
 
-/usr/local/go/bin/go install -v github.com/lc/gau/v2/cmd/gau@latest
+/usr/local/go/bin/go install github.com/lc/gau/v2/cmd/gau@latest
 ln -s $HOME/go/bin/gau /usr/bin/gau
 
 
