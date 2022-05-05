@@ -141,6 +141,15 @@ cd ~/
 git clone https://github.com/1ndianl33t/Gf-Patterns
 mv ~/Gf-Patterns/*.json ~/.gf
 
+echo "Instalando urldedupe"
 
+cd ~/
+git clone https://github.com/ameenmaali/urldedupe.git
+cd urldedupe
+apt install -y cmake
+cmake CMakeLists.txt
+make
+cp urldedupe /usr/bin/
+cd ~/
 
 bash
