@@ -19,6 +19,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Qsreplace <br />
 - Subfinder <br />
 - Takeover <br />
+- Urldedupe <br />
 - Kxss <br />
 - ParamSpider <br />
 - Waybackurls <br />
