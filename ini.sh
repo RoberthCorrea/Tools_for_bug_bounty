@@ -107,6 +107,16 @@ echo "Instalando Gau"
 ln -s $HOME/go/bin/gau /usr/bin/gau
 
 
+echo "Instalando Amass"
+
+go install -v github.com/OWASP/Amass/v3/...@master
+
+
+echo "Instalando Mapcidr"
+/usr/local/go/bin/go install -v github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest
+ln -s $HOME/go/bin/mapcidr /usr/bin/mapcidr
+
+
 echo "Instalando Subfinder"
 
 apt install unzip
@@ -138,13 +148,13 @@ echo "Instalando gf"
 ln -s $HOME/go/bin/gf /usr/bin/gf
 echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
 mkdir ~/.gf
-cd ~/
+cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/1ndianl33t/Gf-Patterns
 mv ~/Gf-Patterns/*.json ~/.gf
 
 echo "Instalando urldedupe"
 
-cd ~/
+cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/ameenmaali/urldedupe.git
 cd urldedupe
 apt install -y cmake
