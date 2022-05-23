@@ -6,6 +6,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 ### Ferramentas utilizadas:
 - Airixss <br />
 - Anew <br />
+- Amass <br />
 - Assetfinder <br />
 - Bhedak <br />
 - DNSX <br />
@@ -14,6 +15,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Gf <br />
 - git-dumpler <br />
 - HTTPX <br />
+- Mapcidr <br />
 - Naabu <br />
 - Nuclei <br />
 - Qsreplace <br />
