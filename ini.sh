@@ -91,6 +91,7 @@ echo "Instalando Nuclei"
 
 /usr/local/go/bin/go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 ln -s $HOME/go/bin/nuclei /usr/bin/nuclei
+nuclei -update
 nuclei -update-templates
 
 
