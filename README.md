@@ -22,6 +22,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Subfinder <br />
 - Takeover <br />
 - Urldedupe <br />
+- Uro <br />
 - Kxss <br />
 - ParamSpider <br />
 - Waybackurls <br />
