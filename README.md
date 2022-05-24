@@ -16,6 +16,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - git-dumpler <br />
 - HTTPX <br />
 - Mapcidr <br />
+- Meg <br />
 - Naabu <br />
 - Nuclei <br />
 - Qsreplace <br />
