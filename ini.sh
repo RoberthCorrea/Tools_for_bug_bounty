@@ -78,6 +78,12 @@ echo "Instalando Kxss"
 /usr/local/go/bin/go install github.com/Emoe/kxss@latest
 ln -s $HOME/go/bin/kxss /usr/bin/kxss
 
+echo "Instalando Meg"
+
+/usr/local/go/bin/go install github.com/tomnomnom/meg@latest
+ln -s $HOME/go/bin/meg /usr/bin/meg
+
+
 echo "Instalando Naabu"
 
 sudo apt install -y libpcap-dev
