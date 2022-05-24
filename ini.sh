@@ -64,6 +64,10 @@ cp findomain /usr/local/bin/
 chmod +x /usr/local/bin/findomain
 
 
+echo "Instalando Uro"
+pip3 install uro
+
+
 echo "Instalando DNSX"
 
 /usr/local/go/bin/go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
