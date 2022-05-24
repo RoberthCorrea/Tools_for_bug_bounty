@@ -18,6 +18,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Mapcidr <br />
 - Meg <br />
 - Naabu <br />
+- Notify <br />
 - Nuclei <br />
 - Qsreplace <br />
 - Subfinder <br />
