@@ -166,7 +166,7 @@ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashr
 mkdir ~/.gf
 cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/1ndianl33t/Gf-Patterns
-mv ~/Gf-Patterns/*.json ~/.gf
+mv ~/ferramentas_de_bug_bounty/Gf-Patterns/*.json ~/.gf
 
 echo "Instalando urldedupe"
 
