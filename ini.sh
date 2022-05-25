@@ -177,6 +177,6 @@ apt install -y cmake
 cmake CMakeLists.txt
 make
 cp urldedupe /usr/bin/
-cd ~/
+cd ~/ferramentas_de_bug_bounty
 
 bash
