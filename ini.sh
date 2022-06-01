@@ -158,6 +158,14 @@ cd ~/ferramentas_de_bug_bounty/ParamSpider
 pip3 install -r requirements.txt
 cd ~/ferramentas_de_bug_bounty
 
+echo "Discovery-Header-Bug-Bounty"
+
+cd ~/ferramentas_de_bug_bounty
+git clone https://github.com/KingOfBugbounty/Discovery-Header-Bug-Bounty.git
+cd ~/ferramentas_de_bug_bounty/Discovery-Header-Bug-Bounty
+pip install -r requirements.txt
+cd ~/ferramentas_de_bug_bounty
+
 echo "Instalando gf"
 
 /usr/local/go/bin/go install -v github.com/tomnomnom/gf@latest
