@@ -9,6 +9,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Amass <br />
 - Assetfinder <br />
 - Bhedak <br />
+- Discovery Header <br />
 - DNSX <br />
 - Findomain <br />
 - Gau <br />
