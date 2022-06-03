@@ -1,15 +1,22 @@
 #!/bin/bash
 
 
-echo "Instalando Python3"
+installPython3() {
+  printf "${YELLOW}[*]${CLEAN} Installing Python3${END}"
 
 sudo apt update
 sudo apt -y install python3 python3-pip
 
+printf "${GREEN}[+]${CLEAN} Python3 Installed${END}${END}"
+}
 
-echo "Instalando JQ"
+installJQ() {
+  printf "${YELLOW}[*]${CLEAN} Installing JQ${END}"
 
 sudo apt -y install jq
+
+printf "${GREEN}[+]${CLEAN} JQ Installed${END}${END}"
+}
 
 echo "Instalando Takeover"
 
@@ -193,4 +200,49 @@ make
 cp urldedupe /usr/bin/
 cd ~/ferramentas_de_bug_bounty
 
-bash
+
+
+
+
+dependenciesLinux() {
+  installPython3
+  installJQ
+  installTakeover
+  installGo
+  installAnew
+  installWaybackurls
+  installBhedak
+  installAirixss
+  installAssetfinder
+  installFindomain
+  installUro
+  installDNSX
+  installNotify
+  installKxss
+  installMeg
+  installNaabu
+  installHTTPX
+  installNuclei
+  installQsreplace
+  installGau
+  installAmass
+  installMapcidr
+  installGospider
+  installSubfinder
+  installGit-dumpler
+  installParamSpider
+  installDiscovery-Header-Bug-Bounty
+  installGf
+  installUrldedupe
+  
+}
+
+
+
+CLEAN='\033[0m'
+RED='\033[01;31m'
+YELLOW='\033[01;33m'
+WHITE='\033[01;37m'
+GREEN='\033[01;32m'
+BOLD='\033[1m'
+END='\n'
