@@ -14,6 +14,7 @@ Este projeto é voltado para a instalação de algumas ferramentas para bug boun
 - Findomain <br />
 - Gau <br />
 - Gf <br />
+- Gospider <br />
 - git-dumpler <br />
 - HTTPX <br />
 - Mapcidr <br />
