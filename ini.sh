@@ -133,6 +133,12 @@ echo "Instalando Mapcidr"
 ln -s $HOME/go/bin/mapcidr /usr/bin/mapcidr
 
 
+echo "Instalando Gospider"
+
+GO111MODULE=on go install github.com/jaeles-project/gospider@latest
+ln -s $HOME/go/bin/gospider /usr/bin/gospider
+
+
 echo "Instalando Subfinder"
 
 apt install unzip
