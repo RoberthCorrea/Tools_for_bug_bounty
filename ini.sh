@@ -90,7 +90,7 @@ installAssetfinder() {
 installFindomain() {
   printf "${YELLOW}[*]${CLEAN} Installing Findomain${END}"
   
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
   wget https://github.com/Findomain/Findomain/releases/download/5.1.1/findomain-linux
   mv findomain-linux findomain
   cp findomain /usr/local/bin/
@@ -221,7 +221,7 @@ installSubfinder() {
   printf "${YELLOW}[*]${CLEAN} Installing Subfinder${END}"
 
   apt install unzip
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
   wget https://github.com/projectdiscovery/subfinder/releases/download/v2.4.9/subfinder_2.4.9_linux_amd64.zip
   unzip subfinder_2.4.9_linux_amd64.zip
   cp subfinder /usr/local/bin/
@@ -233,9 +233,9 @@ installSubfinder() {
 installGit-dumpler() {
   printf "${YELLOW}[*]${CLEAN} Installing Git-dumpler${END}"
 
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
   git clone https://github.com/arthaud/git-dumper.git
-  cd ~/ferramentas_de_bug_bounty/git-dumper
+  cd ~/Tools_for_bug_bounty/git-dumper
   pip install -r requirements.txt
 
   printf "${GREEN}[+]${CLEAN} Git-dumpler Installed${END}${END}"
@@ -244,11 +244,11 @@ installGit-dumpler() {
 installParamSpider() {
   printf "${YELLOW}[*]${CLEAN} Installing ParamSpider${END}"
 
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
   git clone https://github.com/devanshbatham/ParamSpider
-  cd ~/ferramentas_de_bug_bounty/ParamSpider
+  cd ~/Tools_for_bug_bounty/ParamSpider
   pip3 install -r requirements.txt
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
 
   printf "${GREEN}[+]${CLEAN} ParamSpider Installed${END}${END}"
 }
@@ -256,11 +256,11 @@ installParamSpider() {
 installDiscovery-Header-Bug-Bounty() {
   printf "${YELLOW}[*]${CLEAN} Installing Discovery-Header-Bug-Bounty${END}"
 
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
   git clone https://github.com/KingOfBugbounty/Discovery-Header-Bug-Bounty.git
-  cd ~/ferramentas_de_bug_bounty/Discovery-Header-Bug-Bounty
+  cd ~/Tools_for_bug_bounty/Discovery-Header-Bug-Bounty
   pip install -r requirements.txt
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
 
   printf "${GREEN}[+]${CLEAN} Discovery-Header-Bug-Bounty Installed${END}${END}"
 }
@@ -271,9 +271,9 @@ installGf() {
   /usr/local/go/bin/go install -v github.com/tomnomnom/gf@latest
   ln -s $HOME/go/bin/gf /usr/bin/gf
   mkdir ~/.gf
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
   git clone https://github.com/1ndianl33t/Gf-Patterns
-  mv ~/ferramentas_de_bug_bounty/Gf-Patterns/*.json ~/.gf
+  mv ~/Tools_for_bug_bounty/Gf-Patterns/*.json ~/.gf
 
   printf "${GREEN}[+]${CLEAN} Gf Installed${END}${END}"
 }
@@ -281,14 +281,14 @@ installGf() {
 installUrldedupe() {
   printf "${YELLOW}[*]${CLEAN} Installing Urldedupe${END}"
 
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
   git clone https://github.com/ameenmaali/urldedupe.git
   cd urldedupe
   apt install -y cmake
   cmake CMakeLists.txt
   make
   cp urldedupe /usr/bin/
-  cd ~/ferramentas_de_bug_bounty
+  cd ~/Tools_for_bug_bounty
 
   printf "${GREEN}[+]${CLEAN} Urldedupe Installed${END}${END}"
 }
