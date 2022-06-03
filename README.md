@@ -1,6 +1,3 @@
-# Tools_for_bug_bounty
-
-
 ## Tools for bug bounty
 
 ```
@@ -18,7 +15,6 @@ This project is to install some tools to help me and everyone to install easily 
 chmod +x ./ini.sh; ./ini.sh
 ```
 
-### Ferramentas utilizadas:
 ## What we are installing (docs)
 
 - [ ] [Python3](https://www.python.org/downloads/)
