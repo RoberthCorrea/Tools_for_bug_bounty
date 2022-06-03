@@ -294,9 +294,6 @@ installUrldedupe() {
 }
 
 
-
-
-
 dependenciesLinux() {
   installPython3
   installJQ
@@ -330,7 +327,21 @@ dependenciesLinux() {
   
 }
 
-
+currentOs="LINUX"
+findCurrentOS() {
+  osType=$(uname)
+  case "$osType" in
+    "Darwin")
+      currentOs="OSX"
+    ;;
+    "Linux")
+      currentOs="LINUX"
+    ;;
+    *)
+      currentOs="UNKNOWN"
+    ;;
+  esac
+}
 
 CLEAN='\033[0m'
 RED='\033[01;31m'
@@ -340,3 +351,25 @@ GREEN='\033[01;32m'
 BOLD='\033[1m'
 END='\n'
 
+main() {
+  printf "${CLEAN}Welcome to ${CLEAN}${GREEN}BugBountyTools${CLEAN} installation${END}"
+  printf "${YELLOW}[*]${CLEAN} Searching for your current OS${END}${END}"
+  findCurrentOS
+
+  case "$currentOs" in
+    "LINUX")
+      printf "${GREEN}[+]${CLEAN} Linux OS detected${END}"
+      printf "${YELLOW}[*]${CLEAN} Installing dependencies ...${END}${END}"
+      dependenciesLinux
+    ;;
+    "OSX")
+      printf "${GREEN}[+]${CLEAN} MacOSX detected${END}"
+      printf "${RED}[-]${CLEAN} Sorry! still Work In Progress${END}${END}"
+    ;;
+    "UNKNOWN")
+      printf "${RED}[-]${CLEAN}Not supported OS${END}"
+    ;;
+  esac
+}
+
+main
