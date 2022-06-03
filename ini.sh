@@ -18,12 +18,16 @@ sudo apt -y install jq
 printf "${GREEN}[+]${CLEAN} JQ Installed${END}${END}"
 }
 
-echo "Instalando Takeover"
+installTakeover() {
+  printf "${YELLOW}[*]${CLEAN} Installing Takeover${END}"
 
 wget -q https://raw.githubusercontent.com/m4ll0k/takeover/master/takeover.py
 
+printf "${GREEN}[+]${CLEAN} Takeover Installed${END}${END}"
+}
 
-echo "Instalando Go"
+installGo() {
+  printf "${YELLOW}[*]${CLEAN} Installing Go${END}"
 
 wget https://go.dev/dl/go1.18.1.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.1.linux-amd64.tar.gz
@@ -34,119 +38,187 @@ echo ' ' >> $HOME/.bashrc
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
 
+printf "${GREEN}[+]${CLEAN} Go Installed${END}${END}"
+}
 
-echo "Instalando Anew"
+installAnew() {
+  printf "${YELLOW}[*]${CLEAN} Installing Anew${END}"
 
 /usr/local/go/bin/go install github.com/tomnomnom/anew@latest
 ln -s $HOME/go/bin/anew /usr/bin/anew
 
+printf "${GREEN}[+]${CLEAN} Anew Installed${END}${END}"
+}
 
-echo "Instalando Waybackurls"
+installWaybackurls() {
+  printf "${YELLOW}[*]${CLEAN} Installing Waybackurls${END}"
 
 /usr/local/go/bin/go install github.com/tomnomnom/waybackurls@latest
 ln -s $HOME/go/bin/waybackurls /usr/bin/waybackurls
 
-echo "Instalando Bhedak"
+printf "${GREEN}[+]${CLEAN} Waybackurls Installed${END}${END}"
+}
+
+installBehdak() {
+  printf "${YELLOW}[*]${CLEAN} Installing Behdak${END}"
 
 pip3 install bhedak
 wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -q && chmod +x bhedak && mv bhedak /usr/bin/
 
-echo "Instalando Airixss"
+printf "${GREEN}[+]${CLEAN} Behdak Installed${END}${END}"
+}
+
+installAirixss() {
+  printf "${YELLOW}[*]${CLEAN} Installing Airixss${END}"
 
 go install github.com/chromedp/chromedp@latest
 /usr/local/go/bin/go install github.com/ferreiraklet/airixss@latest
 ln -s $HOME/go/bin/airixss /usr/bin/airixss
 
-echo "Instalando Assetfinder"
+printf "${GREEN}[+]${CLEAN} Airixss Installed${END}${END}"
+}
+
+installAssetfinder() {
+  printf "${YELLOW}[*]${CLEAN} Installing Assetfinder${END}"
 
 /usr/local/go/bin/go install github.com/tomnomnom/assetfinder@latest
 ln -s $HOME/go/bin/assetfinder /usr/bin/assetfinder
 
+printf "${GREEN}[+]${CLEAN} Assetfinder Installed${END}${END}"
+}
 
-echo "Instalando Findomain"
+installFindomain() {
+  printf "${YELLOW}[*]${CLEAN} Installing Findomain${END}"
+  
 cd ~/ferramentas_de_bug_bounty
 wget https://github.com/Findomain/Findomain/releases/download/5.1.1/findomain-linux
 mv findomain-linux findomain
 cp findomain /usr/local/bin/
 chmod +x /usr/local/bin/findomain
 
+printf "${GREEN}[+]${CLEAN} Findomain Installed${END}${END}"
+}
 
-echo "Instalando Uro"
+installUro() {
+  printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
+ 
 pip3 install uro
 
+printf "${GREEN}[+]${CLEAN} Uro Installed${END}${END}"
+}
 
-echo "Instalando DNSX"
+installDNSX() {
+  printf "${YELLOW}[*]${CLEAN} Installing DNSX${END}"
 
 /usr/local/go/bin/go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 ln -s $HOME/go/bin/dnsx /usr/bin/dnsx
 
-echo "Instalando Notify"
+printf "${GREEN}[+]${CLEAN} DNSX Installed${END}${END}"
+}
+
+installNotify() {
+  printf "${YELLOW}[*]${CLEAN} Installing Notify${END}"
 
 /usr/local/go/bin/go install -v github.com/projectdiscovery/notify/cmd/notify@latest
 ln -s $HOME/go/bin/notifi /usr/bin/notify
 
+printf "${GREEN}[+]${CLEAN} Notify Installed${END}${END}"
+}
 
-echo "Instalando Kxss"
+installKxss() {
+  printf "${YELLOW}[*]${CLEAN} Installing Kxss${END}"
 
 /usr/local/go/bin/go install github.com/Emoe/kxss@latest
 ln -s $HOME/go/bin/kxss /usr/bin/kxss
 
-echo "Instalando Meg"
+printf "${GREEN}[+]${CLEAN} Kxss Installed${END}${END}"
+}
+
+installMeg() {
+  printf "${YELLOW}[*]${CLEAN} Installing Meg${END}"
 
 /usr/local/go/bin/go install github.com/tomnomnom/meg@latest
 ln -s $HOME/go/bin/meg /usr/bin/meg
 
+printf "${GREEN}[+]${CLEAN} Meg Installed${END}${END}"
+}
 
-echo "Instalando Naabu"
+installNaabu() {
+  printf "${YELLOW}[*]${CLEAN} Installing Naabu${END}"
 
 sudo apt install -y libpcap-dev
 /usr/local/go/bin/go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 ln -s $HOME/go/bin/naabu /usr/bin/naabu
 
+printf "${GREEN}[+]${CLEAN} Naabu Installed${END}${END}"
+}
 
-echo "Instalando HTTPX"
+installHTTPX() {
+  printf "${YELLOW}[*]${CLEAN} Installing HTTPX${END}"
 
 /usr/local/go/bin/go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 ln -s $HOME/go/bin/httpx /usr/bin/httpx
 
+printf "${GREEN}[+]${CLEAN} HTTPX Installed${END}${END}"
+}
 
-echo "Instalando Nuclei"
+installNuclei() {
+  printf "${YELLOW}[*]${CLEAN} Installing Nuclei${END}"
 
 /usr/local/go/bin/go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 ln -s $HOME/go/bin/nuclei /usr/bin/nuclei
 nuclei -update
 nuclei -update-templates
 
+printf "${GREEN}[+]${CLEAN} Nuclei Installed${END}${END}"
+}
 
-echo "Instalando Qsreplace"
+installQsreplace() {
+  printf "${YELLOW}[*]${CLEAN} Installing Qsreplace${END}"
 
 /usr/local/go/bin/go install github.com/tomnomnom/qsreplace@latest
 ln -s $HOME/go/bin/qsreplace /usr/bin/qsreplace
 
+printf "${GREEN}[+]${CLEAN} Qsreplace Installed${END}${END}"
+}
 
-echo "Instalando Gau"
+installGau() {
+  printf "${YELLOW}[*]${CLEAN} Installing Gau${END}"
 
 /usr/local/go/bin/go install github.com/lc/gau/v2/cmd/gau@latest
 ln -s $HOME/go/bin/gau /usr/bin/gau
 
+printf "${GREEN}[+]${CLEAN} Gau Installed${END}${END}"
+}
 
-echo "Instalando Amass"
+installAmass() {
+  printf "${YELLOW}[*]${CLEAN} Installing Amass${END}"
 
 go install -v github.com/OWASP/Amass/v3/...@master
 
+printf "${GREEN}[+]${CLEAN} Amass Installed${END}${END}"
+}
 
-echo "Instalando Mapcidr"
+installMapcidr() {
+  printf "${YELLOW}[*]${CLEAN} Installing Mapcidr${END}"
+  
 /usr/local/go/bin/go install -v github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest
 ln -s $HOME/go/bin/mapcidr /usr/bin/mapcidr
 
+printf "${GREEN}[+]${CLEAN} Mapcidr Installed${END}${END}"
+}
 
-echo "Instalando Gospider"
+installGospider() {
+  printf "${YELLOW}[*]${CLEAN} Installing Gospider${END}"
 
 GO111MODULE=on go install github.com/jaeles-project/gospider@latest
 ln -s $HOME/go/bin/gospider /usr/bin/gospider
 
+printf "${GREEN}[+]${CLEAN} Gospider Installed${END}${END}"
+}
 
-echo "Instalando Subfinder"
+installSubfinder() {
+  printf "${YELLOW}[*]${CLEAN} Installing Subfinder${END}"
 
 apt install unzip
 cd ~/ferramentas_de_bug_bounty
@@ -155,15 +227,22 @@ unzip subfinder_2.4.9_linux_amd64.zip
 cp subfinder /usr/local/bin/
 chmod +x /usr/local/bin/subfinder
 
-
-echo "Instalando git-dumpler"
+printf "${GREEN}[+]${CLEAN} Subfinder Installed${END}${END}"
+}
+  
+installGit-dumpler() {
+  printf "${YELLOW}[*]${CLEAN} Installing Git-dumpler${END}"
 
 cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/arthaud/git-dumper.git
 cd ~/ferramentas_de_bug_bounty/git-dumper
 pip install -r requirements.txt
 
-echo "Instalando ParamSpider"
+printf "${GREEN}[+]${CLEAN} Git-dumpler Installed${END}${END}"
+}
+  
+installParamSpider() {
+  printf "${YELLOW}[*]${CLEAN} Installing ParamSpider${END}"
 
 cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/devanshbatham/ParamSpider
@@ -171,7 +250,11 @@ cd ~/ferramentas_de_bug_bounty/ParamSpider
 pip3 install -r requirements.txt
 cd ~/ferramentas_de_bug_bounty
 
-echo "Discovery-Header-Bug-Bounty"
+printf "${GREEN}[+]${CLEAN} ParamSpider Installed${END}${END}"
+}
+  
+installDiscovery-Header-Bug-Bounty() {
+  printf "${YELLOW}[*]${CLEAN} Installing Discovery-Header-Bug-Bounty${END}"
 
 cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/KingOfBugbounty/Discovery-Header-Bug-Bounty.git
@@ -179,17 +262,24 @@ cd ~/ferramentas_de_bug_bounty/Discovery-Header-Bug-Bounty
 pip install -r requirements.txt
 cd ~/ferramentas_de_bug_bounty
 
-echo "Instalando gf"
+printf "${GREEN}[+]${CLEAN} Discovery-Header-Bug-Bounty Installed${END}${END}"
+}
+
+installGf() {
+  printf "${YELLOW}[*]${CLEAN} Installing Gf${END}"
 
 /usr/local/go/bin/go install -v github.com/tomnomnom/gf@latest
 ln -s $HOME/go/bin/gf /usr/bin/gf
-echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
 mkdir ~/.gf
 cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/1ndianl33t/Gf-Patterns
 mv ~/ferramentas_de_bug_bounty/Gf-Patterns/*.json ~/.gf
 
-echo "Instalando urldedupe"
+printf "${GREEN}[+]${CLEAN} Gf Installed${END}${END}"
+}
+
+installUrldedupe() {
+  printf "${YELLOW}[*]${CLEAN} Installing Urldedupe${END}"
 
 cd ~/ferramentas_de_bug_bounty
 git clone https://github.com/ameenmaali/urldedupe.git
@@ -199,6 +289,9 @@ cmake CMakeLists.txt
 make
 cp urldedupe /usr/bin/
 cd ~/ferramentas_de_bug_bounty
+
+printf "${GREEN}[+]${CLEAN} Urldedupe Installed${END}${END}"
+}
 
 
 
