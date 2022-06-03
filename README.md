@@ -1,42 +1,51 @@
-# Ferramentas_de_Bug_Bounty
+# Tools_for_bug_bounty
 
 
-## Ferramentas para bug bounty
-Este projeto é voltado para a instalação de algumas ferramentas para bug bounty utilizadas por mim e que podem ajudar vocês.
-### Ferramentas utilizadas:
-- Airixss <br />
-- Anew <br />
-- Amass <br />
-- Assetfinder <br />
-- Bhedak <br />
-- Discovery Header <br />
-- DNSX <br />
-- Findomain <br />
-- Gau <br />
-- Gf <br />
-- Gospider <br />
-- git-dumpler <br />
-- HTTPX <br />
-- Mapcidr <br />
-- Meg <br />
-- Naabu <br />
-- Notify <br />
-- Nuclei <br />
-- Qsreplace <br />
-- Subfinder <br />
-- Takeover <br />
-- Urldedupe <br />
-- Uro <br />
-- Kxss <br />
-- ParamSpider <br />
-- Waybackurls <br />
-## Requisitos:
+## Tools for bug bounty
+
+```
+This project is to install some tools to help me and everyone to install easily some common stuffs.
+``` 
+## Requirements:
+
+- GNU/Linux
 - wget
 - git
-- GNU/Linux
 
 ## How to run
 
 ```
 chmod +x ./ini.sh; ./ini.sh
 ```
+
+### Ferramentas utilizadas:
+## What we are installing (docs)
+
+- [ ] [Python3](https://www.python.org/downloads/)
+- [ ] [JQ](https://stedolan.github.io/jq/download/)
+- [ ] [Go](https://go.dev/doc/install)
+- [ ] [Anew](https://github.com/tomnomnom/anew)
+- [ ] [Waybackurls](https://github.com/tomnomnom/waybackurl)
+- [ ] [Behdak](https://github.com/R0X4R/bhedak)
+- [ ] [Airixss](https://github.com/ferreiraklet/airixss)
+- [ ] [Assetfinder](https://github.com/tomnomnom/assetfinder)
+- [ ] [Findomain](https://github.com/Findomain/Findomain)
+- [ ] [Uro](https://github.com/s0md3v/uro)
+- [ ] [DNSX](https://github.com/projectdiscovery/dnsx)
+- [ ] [Notify](https://github.com/projectdiscovery/notify)
+- [ ] [Kxss](https://github.com/Emoe/kxss)
+- [ ] [Meg](https://github.com/tomnomnom/meg)
+- [ ] [Naabu](https://github.com/projectdiscovery/naabu)
+- [ ] [HTTPX](https://github.com/projectdiscovery/httpx)
+- [ ] [Nuclei](https://github.com/projectdiscovery/nuclei)
+- [ ] [Qsreplace](https://github.com/tomnomnom/qsreplace)
+- [ ] [Gau](https://github.com/lc/gau)
+- [ ] [Amass](https://github.com/OWASP/Amass)
+- [ ] [Mapcidr](https://github.com/projectdiscovery/mapcidr)
+- [ ] [Gospider](https://github.com/jaeles-project/gospider)
+- [ ] [Subfinder](https://github.com/projectdiscovery/subfinder)
+- [ ] [Git-dumpler](https://https://github.com/arthaud/git-dumper)
+- [ ] [ParamSpider](https://github.com/devanshbatham/ParamSpider)
+- [ ] [Discovery-Header-Bug-Bounty](https://https://github.com/KingOfBugbounty/Discovery-Header-Bug-Bounty)
+- [ ] [Gf](https://github.com/tomnomnom/gf)
+- [ ] [Urldedupe](https://github.com/ameenmaali/urldedupe)
