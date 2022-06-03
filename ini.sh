@@ -59,7 +59,7 @@ installWaybackurls() {
   printf "${GREEN}[+]${CLEAN} Waybackurls Installed${END}${END}"
 }
 
-installBehdak() {
+installBhedak() {
   printf "${YELLOW}[*]${CLEAN} Installing Behdak${END}"
 
   pip3 install bhedak
