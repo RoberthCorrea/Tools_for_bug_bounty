@@ -21,7 +21,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [JQ](https://stedolan.github.io/jq/download/)
 - [ ] [Go](https://go.dev/doc/install)
 - [ ] [Anew](https://github.com/tomnomnom/anew)
-- [ ] [Waybackurls](https://github.com/tomnomnom/waybackurl)
+- [ ] [Waybackurls](https://github.com/tomnomnom/waybackurls)
 - [ ] [Behdak](https://github.com/R0X4R/bhedak)
 - [ ] [Airixss](https://github.com/ferreiraklet/airixss)
 - [ ] [Assetfinder](https://github.com/tomnomnom/assetfinder)
