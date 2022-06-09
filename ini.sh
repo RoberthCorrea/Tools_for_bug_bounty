@@ -191,6 +191,20 @@ installGau() {
   printf "${GREEN}[+]${CLEAN} Gau Installed${END}${END}"
 }
 
+installDalfox() {
+  printf "${YELLOW}[*]${CLEAN} Installing Dalfox${END}"
+  
+  cd ~/Tools_for_bug_bounty
+  mkdir dalfox
+  cd ~/Tools_for_bug_bounty/dalfox
+  wget https://github.com/hahwul/dalfox/releases/download/v2.7.5/dalfox_2.7.5_linux_amd64.tar.gz
+  tar xvf dalfox_2.7.5_linux_amd64.tar.gz
+  mv dalfox /usr/bin/dalfox
+  cd ~/Tools_for_bug_bounty
+  
+  printf "${GREEN}[+]${CLEAN} Dalfox Installed${END}${END}"
+}
+
 installAmass() {
   printf "${YELLOW}[*]${CLEAN} Installing Amass${END}"
 
@@ -315,6 +329,7 @@ dependenciesLinux() {
   installNuclei
   installQsreplace
   installGau
+  installDalfox
   installAmass
   installMapcidr
   installGospider
