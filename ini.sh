@@ -120,7 +120,7 @@ installNotify() {
   printf "${YELLOW}[*]${CLEAN} Installing Notify${END}"
 
   /usr/local/go/bin/go install -v github.com/projectdiscovery/notify/cmd/notify@latest
-  ln -s $HOME/go/bin/notifi /usr/bin/notify
+  ln -s $HOME/go/bin/notify /usr/bin/notify
 
   printf "${GREEN}[+]${CLEAN} Notify Installed${END}${END}"
 }
