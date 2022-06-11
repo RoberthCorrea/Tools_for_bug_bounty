@@ -36,6 +36,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Nuclei](https://github.com/projectdiscovery/nuclei)
 - [ ] [Qsreplace](https://github.com/tomnomnom/qsreplace)
 - [ ] [Gau](https://github.com/lc/gau)
+- [ ] [Gauplus](https://github.com/bp0lr/gauplus)
 - [ ] [Dalfox](https://github.com/hahwul/dalfox)
 - [ ] [Amass](https://github.com/OWASP/Amass)
 - [ ] [Mapcidr](https://github.com/projectdiscovery/mapcidr)
