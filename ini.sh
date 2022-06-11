@@ -191,6 +191,15 @@ installGau() {
   printf "${GREEN}[+]${CLEAN} Gau Installed${END}${END}"
 }
 
+installGauplus() {
+  printf "${YELLOW}[*]${CLEAN} Installing Gauplus${END}"
+
+  /usr/local/go/bin/go install github.com/bp0lr/gauplus@latest
+  ln -s $HOME/go/bin/gauplus /usr/bin/gauplus
+
+  printf "${GREEN}[+]${CLEAN} Gauplus Installed${END}${END}"
+}
+
 installDalfox() {
   printf "${YELLOW}[*]${CLEAN} Installing Dalfox${END}"
   
@@ -329,6 +338,7 @@ dependenciesLinux() {
   installNuclei
   installQsreplace
   installGau
+  installGauplus
   installDalfox
   installAmass
   installMapcidr
