@@ -1,7 +1,7 @@
 ## Tools for bug bounty
 
 ```
-This project install some tools to help me and everyone else easily install some common stuff.
+This project installs some common bug_bounty tools, to make installing the tools easier.
 ``` 
 ## Requirements:
 
