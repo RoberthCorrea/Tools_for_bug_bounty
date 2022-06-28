@@ -22,6 +22,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Go](https://go.dev/doc/install)
 - [ ] [Anew](https://github.com/tomnomnom/anew)
 - [ ] [Waybackurls](https://github.com/tomnomnom/waybackurls)
+- [ ] [Waymore](https://github.com/xnl-h4ck3r/waymore)
 - [ ] [Behdak](https://github.com/R0X4R/bhedak)
 - [ ] [Airixss](https://github.com/ferreiraklet/airixss)
 - [ ] [Assetfinder](https://github.com/tomnomnom/assetfinder)
