@@ -59,6 +59,16 @@ installWaybackurls() {
   printf "${GREEN}[+]${CLEAN} Waybackurls Installed${END}${END}"
 }
 
+installWaymore() {
+  printf "${YELLOW}[*]${CLEAN} Installing Waymore${END}"
+  
+  git clone https://github.com/xnl-h4ck3r/waymore.git
+  cd waymore
+  sudo python3 setup.py install
+  
+    printf "${GREEN}[+]${CLEAN} Waymore Installed${END}${END}"
+}
+
 installBhedak() {
   printf "${YELLOW}[*]${CLEAN} Installing Behdak${END}"
 
@@ -324,6 +334,7 @@ dependenciesLinux() {
   installGo
   installAnew
   installWaybackurls
+  installWaymore
   installBhedak
   installAirixss
   installAssetfinder
