@@ -5,6 +5,7 @@ This project installs some common bug_bounty tools, to make installing the tools
 ``` 
 ## Requirements:
 
+- You need to be the root user
 - GNU/Linux
 - wget
 - git
