@@ -34,6 +34,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Sudomy](https://github.com/screetsec/Sudomy)
 - [ ] [Sdlookup](https://github.com/j3ssie/sdlookup)
 - [ ] [Freq](https://github.com/takshal/freq)
+- [ ] [Dnsvalidator](https://github.com/vortexau/dnsvalidator)
 - [ ] [Uro](https://github.com/s0md3v/uro)
 - [ ] [DNSX](https://github.com/projectdiscovery/dnsx)
 - [ ] [Notify](https://github.com/projectdiscovery/notify)
