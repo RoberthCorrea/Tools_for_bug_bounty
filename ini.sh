@@ -148,6 +148,15 @@ installSudomy() {
   printf "${GREEN}[+]${CLEAN} Sudomy Installed${END}${END}"
 }
 
+installSdlookup() {
+  printf "${YELLOW}[*]${CLEAN} Installing Sdlookup${END}"
+  
+  /usr/local/go/bin/go install github.com/j3ssie/sdlookup@latest
+  ln -s $HOME/go/bin/sdlookup /usr/bin/sdlookup
+
+  printf "${GREEN}[+]${CLEAN} Sdlookup Installed${END}${END}"
+}
+
 installFreq() {
   printf "${YELLOW}[*]${CLEAN} Installing Freq${END}"
   
@@ -402,6 +411,7 @@ dependenciesLinux() {
   installGoop
   installPhoton
   installSudomy
+  installSdlookup
   installFreq
   installUro
   installDNSX
