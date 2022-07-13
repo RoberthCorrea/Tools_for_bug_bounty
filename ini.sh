@@ -4,7 +4,6 @@
 installPython3() {
   printf "${YELLOW}[*]${CLEAN} Installing Python3${END}"
 
-  sudo apt update
   sudo apt -y install python3 python3-pip
 
   printf "${GREEN}[+]${CLEAN} Python3 Installed${END}${END}"
