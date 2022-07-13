@@ -166,6 +166,17 @@ installFreq() {
   printf "${GREEN}[+]${CLEAN} Freq Installed${END}${END}"
 }
 
+installDnsvalidator() {
+  printf "${YELLOW}[*]${CLEAN} Installing Dnsvalidator${END}"
+  
+  cd ~/Tools_for_bug_bounty
+  git clone https://github.com/vortexau/dnsvalidator.git
+  cd ~/Tools_for_bug_bounty/dnsvalidator
+  python3 setup.py install
+
+  printf "${GREEN}[+]${CLEAN} Dnsvalidator Installed${END}${END}"
+}
+
 installUro() {
   printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
  
