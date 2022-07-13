@@ -45,6 +45,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Gospider](https://github.com/jaeles-project/gospider)
 - [ ] [Subfinder](https://github.com/projectdiscovery/subfinder)
 - [ ] [Git-dumpler](https://github.com/arthaud/git-dumper)
+- [ ] [Knock](https://github.com/guelfoweb/knock)
 - [ ] [ParamSpider](https://github.com/devanshbatham/ParamSpider)
 - [ ] [Discovery-Header-Bug-Bounty](https://github.com/KingOfBugbounty/Discovery-Header-Bug-Bounty)
 - [ ] [Gf](https://github.com/tomnomnom/gf)
