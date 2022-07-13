@@ -268,7 +268,7 @@ installGit-dumpler() {
   cd ~/Tools_for_bug_bounty
   git clone https://github.com/arthaud/git-dumper.git
   cd ~/Tools_for_bug_bounty/git-dumper
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
 
   printf "${GREEN}[+]${CLEAN} Git-dumpler Installed${END}${END}"
 }
@@ -279,7 +279,7 @@ installKnock() {
   cd ~/Tools_for_bug_bounty
   git clone https://github.com/guelfoweb/knock.git
   cd ~/Tools_for_bug_bounty/knock.git
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
 
   printf "${GREEN}[+]${CLEAN} Knock Installed${END}${END}"
 }
@@ -302,7 +302,7 @@ installDiscovery-Header-Bug-Bounty() {
   cd ~/Tools_for_bug_bounty
   git clone https://github.com/KingOfBugbounty/Discovery-Header-Bug-Bounty.git
   cd ~/Tools_for_bug_bounty/Discovery-Header-Bug-Bounty
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
   cd ~/Tools_for_bug_bounty
 
   printf "${GREEN}[+]${CLEAN} Discovery-Header-Bug-Bounty Installed${END}${END}"
