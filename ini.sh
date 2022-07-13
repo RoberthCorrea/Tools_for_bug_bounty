@@ -108,6 +108,15 @@ installFindomain() {
   printf "${GREEN}[+]${CLEAN} Findomain Installed${END}${END}"
 }
 
+installHakcheckurl() {
+  printf "${YELLOW}[*]${CLEAN} Installing Hakcheckurl${END}"
+  
+  /usr/local/go/bin/go install github.com/hakluke/hakcheckurl@latest
+  ln -s $HOME/go/bin/hakcheckurl /usr/bin/hakcheckurl
+
+  printf "${GREEN}[+]${CLEAN} Hakcheckurl Installed${END}${END}"
+}
+
 installUro() {
   printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
  
@@ -349,6 +358,7 @@ dependenciesLinux() {
   installAirixss
   installAssetfinder
   installFindomain
+  installHakcheckurl
   installUro
   installDNSX
   installNotify
