@@ -194,6 +194,15 @@ installDNSX() {
   printf "${GREEN}[+]${CLEAN} DNSX Installed${END}${END}"
 }
 
+installPuredns() {
+  printf "${YELLOW}[*]${CLEAN} Installing Puredns${END}"
+
+  /usr/local/go/bin/go install github.com/d3mondev/puredns/v2@latest
+  ln -s $HOME/go/bin/puredns /usr/bin/puredns
+
+  printf "${GREEN}[+]${CLEAN} Puredns Installed${END}${END}"
+}
+
 installNotify() {
   printf "${YELLOW}[*]${CLEAN} Installing Notify${END}"
 
@@ -427,6 +436,7 @@ dependenciesLinux() {
   installDnsvalidator
   installUro
   installDNSX
+  installPuredns
   installNotify
   installKxss
   installMeg
