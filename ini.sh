@@ -137,6 +137,17 @@ installPhoton() {
   printf "${GREEN}[+]${CLEAN} Photon Installed${END}${END}"
 }
 
+installSudomy() {
+  printf "${YELLOW}[*]${CLEAN} Installing Sudomy${END}"
+  
+  cd ~/Tools_for_bug_bounty
+  git clone --recursive https://github.com/screetsec/Sudomy.git
+  cd ~/Tools_for_bug_bounty/Sudomy
+  python3 -m pip install -r requirements.txt
+
+  printf "${GREEN}[+]${CLEAN} Sudomy Installed${END}${END}"
+}
+
 installUro() {
   printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
  
@@ -380,6 +391,8 @@ dependenciesLinux() {
   installFindomain
   installHakcheckurl
   installGoop
+  installPhoton
+  installSudomy
   installUro
   installDNSX
   installNotify
