@@ -29,6 +29,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Assetfinder](https://github.com/tomnomnom/assetfinder)
 - [ ] [Findomain](https://github.com/Findomain/Findomain)
 - [ ] [Hakcheckurl](https://github.com/hakluke/hakcheckurl)
+- [ ] [Goop](https://github.com/nyancrimew/goop)
 - [ ] [Uro](https://github.com/s0md3v/uro)
 - [ ] [DNSX](https://github.com/projectdiscovery/dnsx)
 - [ ] [Notify](https://github.com/projectdiscovery/notify)
