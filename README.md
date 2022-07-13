@@ -36,6 +36,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Freq](https://github.com/takshal/freq)
 - [ ] [Dnsvalidator](https://github.com/vortexau/dnsvalidator)
 - [ ] [Sigurlfind3r](https://github.com/signedsecurity/sigurlfind3r)
+- [ ] [Nilo](https://github.com/ferreiraklet/nilo)
 - [ ] [Uro](https://github.com/s0md3v/uro)
 - [ ] [DNSX](https://github.com/projectdiscovery/dnsx)
 - [ ] [Puredns](https://github.com/d3mondev/puredns)
