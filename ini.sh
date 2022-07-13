@@ -272,6 +272,17 @@ installGit-dumpler() {
 
   printf "${GREEN}[+]${CLEAN} Git-dumpler Installed${END}${END}"
 }
+
+installKnock() {
+  printf "${YELLOW}[*]${CLEAN} Installing Knock${END}"
+
+  cd ~/Tools_for_bug_bounty
+  git clone https://github.com/guelfoweb/knock.git
+  cd ~/Tools_for_bug_bounty/knock.git
+  pip install -r requirements.txt
+
+  printf "${GREEN}[+]${CLEAN} Knock Installed${END}${END}"
+}
   
 installParamSpider() {
   printf "${YELLOW}[*]${CLEAN} Installing ParamSpider${END}"
@@ -355,6 +366,7 @@ dependenciesLinux() {
   installGospider
   installSubfinder
   installGit-dumpler
+  installKnock
   installParamSpider
   installDiscovery-Header-Bug-Bounty
   installGf
