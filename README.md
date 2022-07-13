@@ -28,6 +28,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Airixss](https://github.com/ferreiraklet/airixss)
 - [ ] [Assetfinder](https://github.com/tomnomnom/assetfinder)
 - [ ] [Findomain](https://github.com/Findomain/Findomain)
+- [ ] [Hakcheckurl](https://github.com/hakluke/hakcheckurl)
 - [ ] [Uro](https://github.com/s0md3v/uro)
 - [ ] [DNSX](https://github.com/projectdiscovery/dnsx)
 - [ ] [Notify](https://github.com/projectdiscovery/notify)
