@@ -180,10 +180,19 @@ installDnsvalidator() {
 installSigurlfind3r() {
   printf "${YELLOW}[*]${CLEAN} Installing Sigurlfind3r${END}"
   
-  go install -v github.com/signedsecurity/sigurlfind3r/cmd/sigurlfind3r@latestt
+  /usr/local/go/bin/go install -v github.com/signedsecurity/sigurlfind3r/cmd/sigurlfind3r@latestt
   ln -s $HOME/go/bin/sigurlfind3r /usr/bin/sigurlfind3r
 
   printf "${GREEN}[+]${CLEAN} Sigurlfind3r Installed${END}${END}"
+}
+
+installNilo() {
+  printf "${YELLOW}[*]${CLEAN} Installing Nilo${END}"
+  
+  /usr/local/go/bin/go install github.com/ferreiraklet/nilo@latest
+  ln -s $HOME/go/bin/nilo /usr/bin/nilo
+
+  printf "${GREEN}[+]${CLEAN} Nilo Installed${END}${END}"
 }
 
 installUro() {
@@ -444,6 +453,7 @@ dependenciesLinux() {
   installFreq
   installDnsvalidator
   installSigurlfind3r
+  installNilo
   installUro
   installDNSX
   installPuredns
