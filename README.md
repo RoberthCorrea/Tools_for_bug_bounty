@@ -37,6 +37,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Dnsvalidator](https://github.com/vortexau/dnsvalidator)
 - [ ] [Uro](https://github.com/s0md3v/uro)
 - [ ] [DNSX](https://github.com/projectdiscovery/dnsx)
+- [ ] [Puredns](https://github.com/d3mondev/puredns)
 - [ ] [Notify](https://github.com/projectdiscovery/notify)
 - [ ] [Kxss](https://github.com/Emoe/kxss)
 - [ ] [Meg](https://github.com/tomnomnom/meg)
