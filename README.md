@@ -32,6 +32,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Goop](https://github.com/nyancrimew/goop)
 - [ ] [Photon](https://github.com/s0md3v/Photon)
 - [ ] [Sudomy](https://github.com/screetsec/Sudomy)
+- [ ] [Freq](https://github.com/takshal/freq)
 - [ ] [Uro](https://github.com/s0md3v/uro)
 - [ ] [DNSX](https://github.com/projectdiscovery/dnsx)
 - [ ] [Notify](https://github.com/projectdiscovery/notify)
