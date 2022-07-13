@@ -424,6 +424,7 @@ dependenciesLinux() {
   installSudomy
   installSdlookup
   installFreq
+  installDnsvalidator
   installUro
   installDNSX
   installNotify
