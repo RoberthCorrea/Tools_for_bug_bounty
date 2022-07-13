@@ -148,6 +148,15 @@ installSudomy() {
   printf "${GREEN}[+]${CLEAN} Sudomy Installed${END}${END}"
 }
 
+installFreq() {
+  printf "${YELLOW}[*]${CLEAN} Installing Freq${END}"
+  
+  /usr/local/go/bin/go install github.com/takshal/freq@latest
+  ln -s $HOME/go/bin/freq /usr/bin/freq
+
+  printf "${GREEN}[+]${CLEAN} Freq Installed${END}${END}"
+}
+
 installUro() {
   printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
  
@@ -393,6 +402,7 @@ dependenciesLinux() {
   installGoop
   installPhoton
   installSudomy
+  installFreq
   installUro
   installDNSX
   installNotify
