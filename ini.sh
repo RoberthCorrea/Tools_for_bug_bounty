@@ -117,6 +117,15 @@ installHakcheckurl() {
   printf "${GREEN}[+]${CLEAN} Hakcheckurl Installed${END}${END}"
 }
 
+installGoop() {
+  printf "${YELLOW}[*]${CLEAN} Installing Goop${END}"
+  
+  /usr/local/go/bin/go install github.com/deletescape/goop@latest
+  ln -s $HOME/go/bin/goop /usr/bin/goop
+
+  printf "${GREEN}[+]${CLEAN} Goop Installed${END}${END}"
+}
+
 installUro() {
   printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
  
@@ -359,6 +368,7 @@ dependenciesLinux() {
   installAssetfinder
   installFindomain
   installHakcheckurl
+  installGoop
   installUro
   installDNSX
   installNotify
