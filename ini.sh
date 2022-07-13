@@ -177,6 +177,15 @@ installDnsvalidator() {
   printf "${GREEN}[+]${CLEAN} Dnsvalidator Installed${END}${END}"
 }
 
+installSigurlfind3r() {
+  printf "${YELLOW}[*]${CLEAN} Installing Sigurlfind3r${END}"
+  
+  go install -v github.com/signedsecurity/sigurlfind3r/cmd/sigurlfind3r@latestt
+  ln -s $HOME/go/bin/sigurlfind3r /usr/bin/sigurlfind3r
+
+  printf "${GREEN}[+]${CLEAN} Sigurlfind3r Installed${END}${END}"
+}
+
 installUro() {
   printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
  
@@ -434,6 +443,7 @@ dependenciesLinux() {
   installSdlookup
   installFreq
   installDnsvalidator
+  installSigurlfind3r
   installUro
   installDNSX
   installPuredns
