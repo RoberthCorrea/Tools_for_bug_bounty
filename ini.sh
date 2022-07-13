@@ -126,6 +126,17 @@ installGoop() {
   printf "${GREEN}[+]${CLEAN} Goop Installed${END}${END}"
 }
 
+installPhoton() {
+  printf "${YELLOW}[*]${CLEAN} Installing Photon${END}"
+  
+  cd ~/Tools_for_bug_bounty
+  git clone https://github.com/s0md3v/Photon.git
+  cd ~/Tools_for_bug_bounty/Photon
+  pip3 install -r requirements.txt 
+
+  printf "${GREEN}[+]${CLEAN} Photon Installed${END}${END}"
+}
+
 installUro() {
   printf "${YELLOW}[*]${CLEAN} Installing Uro${END}"
  
