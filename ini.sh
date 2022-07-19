@@ -180,10 +180,19 @@ installDnsvalidator() {
 installSigurlfind3r() {
   printf "${YELLOW}[*]${CLEAN} Installing Sigurlfind3r${END}"
   
-  /usr/local/go/bin/go install -v github.com/signedsecurity/sigurlfind3r/cmd/sigurlfind3r@latestt
+  /usr/local/go/bin/go install -v github.com/signedsecurity/sigurlfind3r/cmd/sigurlfind3r@latest
   ln -s $HOME/go/bin/sigurlfind3r /usr/bin/sigurlfind3r
 
   printf "${GREEN}[+]${CLEAN} Sigurlfind3r Installed${END}${END}"
+}
+
+installChaos() {
+  printf "${YELLOW}[*]${CLEAN} Installing Chaos${END}"
+  
+  /usr/local/go/bin/go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
+  ln -s $HOME/go/bin/chaos /usr/bin/chaos
+
+  printf "${GREEN}[+]${CLEAN} Chaos Installed${END}${END}"
 }
 
 installNilo() {
@@ -453,6 +462,7 @@ dependenciesLinux() {
   installFreq
   installDnsvalidator
   installSigurlfind3r
+  installChaos
   installNilo
   installUro
   installDNSX
