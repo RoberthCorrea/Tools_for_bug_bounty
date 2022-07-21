@@ -31,6 +31,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Hakcheckurl](https://github.com/hakluke/hakcheckurl)
 - [ ] [Goop](https://github.com/nyancrimew/goop)
 - [ ] [Photon](https://github.com/s0md3v/Photon)
+- [ ] [JSScanner](https://github.com/0x240x23elu/JSScanner)
 - [ ] [Sudomy](https://github.com/screetsec/Sudomy)
 - [ ] [Sdlookup](https://github.com/j3ssie/sdlookup)
 - [ ] [Freq](https://github.com/takshal/freq)
