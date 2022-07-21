@@ -137,6 +137,17 @@ installPhoton() {
   printf "${GREEN}[+]${CLEAN} Photon Installed${END}${END}"
 }
 
+installJSScanner() {
+  printf "${YELLOW}[*]${CLEAN} Installing JSScanner${END}"
+  
+  cd ~/Tools_for_bug_bounty
+  git clone https://github.com/0x240x23elu/JSScanner.git
+  cd ~/Tools_for_bug_bounty/JSScanner
+  pip3 install -r requirements.txt 
+
+  printf "${GREEN}[+]${CLEAN} JSScanner Installed${END}${END}"
+}
+
 installSudomy() {
   printf "${YELLOW}[*]${CLEAN} Installing Sudomy${END}"
   
@@ -457,6 +468,7 @@ dependenciesLinux() {
   installHakcheckurl
   installGoop
   installPhoton
+  installJSScanner
   installSudomy
   installSdlookup
   installFreq
