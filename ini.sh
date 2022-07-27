@@ -1,5 +1,12 @@
 #!/bin/bash
 
+installTmux() {
+  printf "${YELLOW}[*]${CLEAN} Installing Tmux${END}"
+
+  apt install tmux
+  
+  printf "${GREEN}[+]${CLEAN} Tmux Installed${END}${END}"
+}
 
 installPython3() {
   printf "${YELLOW}[*]${CLEAN} Installing Python3${END}"
@@ -61,6 +68,7 @@ installWaybackurls() {
 installWaymore() {
   printf "${YELLOW}[*]${CLEAN} Installing Waymore${END}"
   
+  cd ~/Tools_for_bug_bounty
   git clone https://github.com/xnl-h4ck3r/waymore.git
   cd waymore
   sudo python3 setup.py install
@@ -454,6 +462,7 @@ installUrldedupe() {
 
 
 dependenciesLinux() {
+  installTmux
   installPython3
   installJQ
   installTakeover
