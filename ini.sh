@@ -3,7 +3,7 @@
 installTmux() {
   printf "${YELLOW}[*]${CLEAN} Installing Tmux${END}"
 
-  apt install tmux
+  apt install -y tmux
   
   printf "${GREEN}[+]${CLEAN} Tmux Installed${END}${END}"
 }
