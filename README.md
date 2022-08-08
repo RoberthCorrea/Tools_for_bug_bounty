@@ -45,6 +45,7 @@ chmod +x ./ini.sh; ./ini.sh
 - [ ] [Notify](https://github.com/projectdiscovery/notify)
 - [ ] [Kxss](https://github.com/Emoe/kxss)
 - [ ] [Meg](https://github.com/tomnomnom/meg)
+- [ ] [xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder)
 - [ ] [Naabu](https://github.com/projectdiscovery/naabu)
 - [ ] [HTTPX](https://github.com/projectdiscovery/httpx)
 - [ ] [Nuclei](https://github.com/projectdiscovery/nuclei)
