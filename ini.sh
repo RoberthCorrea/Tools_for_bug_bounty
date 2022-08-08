@@ -276,6 +276,18 @@ installMeg() {
   printf "${GREEN}[+]${CLEAN} Meg Installed${END}${END}"
 }
 
+installxnLinkFinder() {
+  printf "${YELLOW}[*]${CLEAN} Installing xnLinkFinder${END}"
+
+  cd ~/Tools_for_bug_bounty
+  git clone https://github.com/xnl-h4ck3r/xnLinkFinder.git
+  cd ~/Tools_for_bug_bounty/xnLinkFinder
+  python setup.py install
+  cd ~/Tools_for_bug_bounty
+
+  printf "${GREEN}[+]${CLEAN} xnLinkFinder Installed${END}${END}"
+}
+
 installNaabu() {
   printf "${YELLOW}[*]${CLEAN} Installing Naabu${END}"
 
@@ -491,6 +503,7 @@ dependenciesLinux() {
   installNotify
   installKxss
   installMeg
+  installxnLinkFinder
   installNaabu
   installHTTPX
   installNuclei
